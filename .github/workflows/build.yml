@@ -33,6 +33,7 @@ jobs:
       #
       - name: Build Raspberry Pi 4 Armv7 Image
         run: |
+          sudo bash create-image armv7 8G
           sudo cp rpi-armv7-archlinux.img rpi-4-armv7-archlinux.img
           zip -v rpi-4-armv7-archlinux.img.zip rpi-4-armv7-archlinux.img
 
